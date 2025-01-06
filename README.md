@@ -104,6 +104,16 @@ project_name/
 │   │   ├── __init__.py
 │   │   ├── file_loader.py      # YML 파일 로드 및 파싱
 │   │   └── logger.py           # 로그 관리
+├── resources/                  # 리소스 파일 저장소
+│   ├── images/                 # 이미지 및 아이콘 파일
+│   │   ├── logo.png            # 로고 파일
+│   │   ├── icon.ico            # 애플리케이션 아이콘
+│   └── qrc/                    # Qt 리소스 파일
+│       └── resources.qrc       # 리소스 정의 파일
+├── ui/                         # .ui 파일 저장소
+│   ├── main_window.ui          # 메인 윈도우 UI 파일
+│   ├── uds_view.ui             # UDS 뷰 UI 파일
+│   └── settings_view.ui        # 설정 화면 UI 파일
 ├── tests/                      # 테스트 코드
 │   ├── __init__.py
 │   ├── test_main.py            # 메인 테스트 코드
@@ -114,9 +124,6 @@ project_name/
 │       └── coverage.xml        # 커버리지 XML 리포트
 ├── dist/                       # PyInstaller 빌드 결과물
 │   └── project_name.exe        # 빌드된 실행 파일
-├── nsis/                       # NSIS 설치 스크립트 및 설정 파일
-│   ├── project_name.nsi        # 설치 스크립트
-│   └── assets/                 # 설치 프로그램 리소스 (아이콘, 이미지 등)
 ├── docs/                       # 문서화 관련 파일
 │   ├── index.md                # 문서 메인 페이지
 │   ├── usage.md                # 사용법
@@ -124,7 +131,7 @@ project_name/
 └── builds/                     # 배포 관련 파일 저장소
     ├── releases/               # GitHub Releases에 올릴 파일
     │   ├── project_name_v1.0.exe # 실행 파일
-    │   ├── project_name_v1.0_installer.exe # 설치 파일
     │   └── coverage_report_v1.0.zip # 테스트 커버리지 결과
     └── artifacts/              # 빌드 아티팩트 저장
+
 

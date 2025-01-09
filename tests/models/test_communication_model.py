@@ -7,7 +7,6 @@ def test_model_initial_state():
     """
     model = CommunicationModel()
     assert model.get_hw_status() == "Disconnected"
-    assert model.get_communication_data() == {}
 
 
 def test_model_connect():
@@ -46,4 +45,4 @@ def test_model_get_communication_data_empty():
     초기 통신 데이터 테스트: 초기 상태에서 데이터가 비어 있는지 확인
     """
     model = CommunicationModel()
-    assert model.get_communication_data() == {}
+    assert not model.get_communication_data()

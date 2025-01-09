@@ -1,8 +1,12 @@
-from .view import MenuBarView, StatusBarView, ToolBarView
-from .model import CommunicationModel, ProjectEditModel
-from .controller import CommunicationController
+from .views import MenuBarView, StatusBarView, ToolBarView
+from .models import CommunicationModel, ProjectEditModel
+from .controllers import CommunicationController
 
-__all__ = ["MenuBarView", "StatusBarView", "ToolBarView",
-           "CommunicationModel", "ProjectEditModel",
-           "CommunicationController"
-           ]
+__all__ = [
+    "MenuBarView",
+    "StatusBarView",
+    "ToolBarView",
+    "CommunicationModel",
+    "ProjectEditModel",
+    "CommunicationController",
+]

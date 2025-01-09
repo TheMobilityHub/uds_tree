@@ -1,3 +1,8 @@
-from .model.uds_model import UdsModel
-from .controller.uds_controller import UdsController
-from .view.uds_view import UdsView
+from .view import MenuBarView, StatusBarView, ToolBarView
+from .model import CommunicationModel, ProjectEditModel
+from .controller import CommunicationController
+
+__all__ = ["MenuBarView", "StatusBarView", "ToolBarView",
+           "CommunicationModel", "ProjectEditModel",
+           "CommunicationController"
+           ]
